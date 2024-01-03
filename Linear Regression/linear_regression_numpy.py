@@ -2,7 +2,7 @@ import numpy as np
 
 def linear_regression_noreg(X, y):
     """
-  Compute the weight parameter given X and y.
+  Compute the weight parameter given X and y. \beta = (X^TX)^{-1}X^TY
   Inputs:
   - X: A numpy array of shape (num_samples, D) containing features
   - y: A numpy array of shape (num_samples, ) containing labels
