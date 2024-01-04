@@ -24,7 +24,7 @@ def model_fit(X, y, lr, num_iter):
         gradient = np.dot(X.T,(y - h))/ y.shape[0]
         theta += lr * gradient
 
-        if i % 1000 == 0:
+        if i % 10000 == 0:
             y_pred = predict(theta, X)
             print(i, np.sum(y_pred==y)/y.shape[0])
 
